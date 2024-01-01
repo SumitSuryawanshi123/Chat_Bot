@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Restaurant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff3e6; /* Light Orange */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-image: url("https://resizer.otstatic.com/v2/photos/wide-large/1/25590872.jpg"); /* Dark Orange */
+            color: white;
+            padding: 10px;
+            font-size: 28px;
+
+        }
+
+        .menu-card {
+            background-color: #ffcc99; /* Lighter Orange */
+            padding: 20px;
+            margin-bottom: 505px; /* Adjusted margin for the footer */
+            background-image: url("https://d4t7t8y8xqo0t.cloudfront.net/app/eazymedia/restaurant%2F330030%2F0.jpg");
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .menu-item {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff; /* White */
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .rate {
+            color: #ff9966; /* Light Orange */
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            display: none; /* Initially hide the footer */
+            z-index: -1; /* Set z-index to move behind other elements */
+        }
+
+        iframe {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 550px; /* Increase the width */
+            height: 580px; /* Increase the height */
+            border: none;
+            z-index: 1; /* Set z-index to be above the footer */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Royal Flavors Restaurant </h1>
+    </header>
+
+    <div class="menu-card">
+        <h2>Our Menu</h2>
+        <section>
+            <div class="menu-item">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/11/pav-bhaji.jpg" alt="Pav Bhaji">
+                <h2>Pav Bhaji</h2>
+                <p class="rate">$6</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://media.vogue.in/wp-content/uploads/2020/08/chole-bhature-recipe.jpg" alt="Chole Bhature">
+                <h2>Chole Bhature</h2>
+                <p class="rate">$7</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg" alt="Pizza">
+                <h2>Pizza</h2>
+                <p class="rate">$8</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="https://vegecravings.com/wp-content/uploads/2017/03/samosa-recipe-step-by-step-instructions.jpg" alt="Samosa">
+                <h2>Samosa</h2>
+                <p class="rate">$5</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="https://www.daringgourmet.com/wp-content/uploads/2023/06/Dosa-Recipe-3.jpg" alt="Rava Dosa">
+                <h2>Rava Dosa</h2>
+                <p class="rate">$7</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="https://www.spiceupthecurry.com/wp-content/uploads/2016/07/vada-pav-2.jpg" alt="Vada Pav">
+                <h2>Vada Pav</h2>
+                <p class="rate">$4</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="https://www.cookwithnabeela.com/wp-content/uploads/2023/09/ChickenBiryani.webp" alt="Biryani">
+                <h2>Biryani</h2>
+                <p class="rate">$9</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHiFl8oSY0uJRpj69Xyy_zRqWMOLJhMMeRVCjHH8ZQnurhJqmRUtHffL20RwMoWdpPDrNyf1ypKkhfbRRK6izYUImwDDpuo-wQFdaXWTnqf0iNgiXAhy5Bl_DL4Vhuk9MHqrW6ON8PTKoyJVn6pgWDJsstco6JL98DEmGkSS8Begsg5vWVfdOmJVl2SQ/w1200-h630-p-k-no-nu/Mysore%20Masala%20Dosai.jpg" alt="Mango Lassi">
+                <h2>Masala Dosa</h2>
+                <p class="rate">$6</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://www.teaforturmeric.com/wp-content/uploads/2021/07/Mango-Lassi-Recipe-Card-1.jpg" alt="Mango Lassi">
+                <h2>Mango Lassi</h2>
+                <p class="rate">$5</p>
+            </div>
+
+            <div>
+                <iframe width="400" height="500" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/b493af1b-334a-4416-b628-adc497f7eb2a"></iframe>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Royal Flavors Restaurant | Address: 123 Main St, Pune</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuCard = document.querySelector('.menu-card');
+            var footer = document.querySelector('footer');
+
+            window.addEventListener('scroll', function () {
+                // Show the footer when the user scrolls to the bottom
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                    footer.style.display = 'block';
+                } else {
+                    footer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
